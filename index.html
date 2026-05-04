@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+            background-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            font-size: 11pt;
+            margin: 0;
+            padding: 0;
+        }
+        .header-banner {
+            background-color: #1a365d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 22pt;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 12pt;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        .meta-info {
+            font-size: 10pt;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        .container {
+            padding: 0 10px;
+        }
+        .highlight-box {
+            background-color: #f0f4f8;
+            border-left: 5px solid #1a365d;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .highlight-box h2 {
+            margin-top: 0;
+            color: #1a365d;
+            font-size: 14pt;
+        }
+        h2 {
+            color: #1a365d;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            font-size: 15pt;
+        }
+        h3 {
+            color: #2c5282;
+            font-size: 12pt;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 10pt;
+        }
+        th {
+            background-color: #edf2f7;
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #cbd5e0;
+            color: #2d3748;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #cbd5e0;
+            vertical-align: top;
+        }
+        .contact-card {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9pt;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner">
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Project Guard — Construction Financial Integrity App</div>
+        <div class="meta-info">Effective Date: May 2026</div>
+    </div>
+
+    <div class="container">
+        <div class="highlight-box">
+            <h2>YOUR DATA STAYS WITH YOU</h2>
+            <p>Project Guard does not operate any developer server that holds your financial data. Everything you enter lives on your phone or in your own private Google Drive folder.</p>
+            <p><strong>"Not even the developer can access your project finances, transactions, or documents."</strong></p>
+        </div>
+
+        <h2>1. About This Policy</h2>
+        <p>This policy explains what information Project Guard collects, how it is used, and the choices you have. We use plain English intentionally — there is no fine print.</p>
+
+        <h2>2. What Data We Collect</h2>
+        
+        <h3>Data that never leaves your device</h3>
+        <p>The following data is stored only in a local database on your phone inside the Android private app sandbox. It is never transmitted to any server operated by the developer:</p>
+        <ul>
+            <li>Project details, budgets, and financial transactions</li>
+            <li>Business and Personal Treasury account balances, income, and expense records</li>
+            <li>Loan records and payment schedules</li>
+            <li>Currency conversion history</li>
+            <li>Supplier and payee records</li>
+            <li>Receipt photos captured by the camera</li>
+            <li>Site contact names and numbers selected from your address book</li>
+            <li>SMS messages read from mobile money and bank alert senders</li>
+        </ul>
+
+        <h3>Data stored in your own Google Drive</h3>
+        <p>If you enable the optional backup feature, an encrypted backup of your local database is uploaded to the AppData folder of your own Google Drive account.</p>
+        <ul>
+            <li>This folder is private to you — it is not visible in your Google Drive file browser and cannot be accessed by anyone else, including the developer.</li>
+            <li>The backup is encrypted with AES-256 before it leaves your device.</li>
+        </ul>
+
+        <h3>Data sent to third-party services</h3>
+        <p>A small amount of data is shared with the following Google services strictly for app operation:</p>
+        <ul>
+            <li><strong>Firebase Authentication / Google Sign-In:</strong> your Google account email and name, used solely to verify your identity and check access authorisation.</li>
+            <li><strong>Cloud Firestore:</strong> your email address is checked against an authorised-users list. No financial data is stored in Firestore.</li>
+            <li><strong>Firebase Crashlytics:</strong> anonymous stack traces when the app crashes. These contain no financial data, no identifiers, and no SMS content.</li>
+        </ul>
+
+        <h2>3. Android Permissions Explained</h2>
+        <p>The table below lists every Android permission the app requests and the exact reason for each one.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Why it is needed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>READ_SMS / RECEIVE_SMS</td>
+                    <td>Parse mobile money & bank alerts on-device only. Never uploaded.</td>
+                </tr>
+                <tr>
+                    <td>CAMERA</td>
+                    <td>Scan receipts. Photos stored locally — never transmitted.</td>
+                </tr>
+                <tr>
+                    <td>READ_CONTACTS</td>
+                    <td>Pick site contacts. Contact data stays on your phone.</td>
+                </tr>
+                <tr>
+                    <td>READ/WRITE_EXTERNAL_STORAGE</td>
+                    <td>Export reports on Android 9 and below only.</td>
+                </tr>
+                <tr>
+                    <td>INTERNET</td>
+                    <td>Firebase login, whitelist check, and anonymous crash reports.</td>
+                </tr>
+                <tr>
+                    <td>RECEIVE_BOOT_COMPLETED</td>
+                    <td>Restart SMS listener after device reboot.</td>
+                </tr>
+                <tr>
+                    <td>POST_NOTIFICATIONS</td>
+                    <td>Show local payment reminder alerts on your device.</td>
+                </tr>
+                <tr>
+                    <td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td>
+                    <td>Keep SMS listener alive in the background.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>4. Third-Party Services</h2>
+        <p>Project Guard uses the following Google LLC services. Each service is governed by Google’s Privacy Policy (policies.google.com/privacy):</p>
+        <ul>
+            <li>Firebase Authentication — secure login and identity verification</li>
+            <li>Cloud Firestore — stores only your email address for access control</li>
+            <li>Firebase Crashlytics — anonymous crash diagnostics, no personal data</li>
+            <li>Google Drive API — your encrypted backup, stored in your own account</li>
+        </ul>
+        <p>No advertising SDKs, analytics SDKs, or data brokers are used. The developer does not sell, rent, or share your data with any third party beyond the Google services listed above.</p>
+        <p>Users may choose to share generated financial reports or grant read-only access to their personal accountants entirely at their own discretion. Any such sharing is initiated by the user and is outside the control of Project Guard.</p>
+
+        <h2>5. Data Security</h2>
+        <ul>
+            <li><strong>Local database:</strong> protected by Android File-Based Encryption (FBE), which locks the app's private storage with your device PIN or biometric.</li>
+            <li><strong>Drive backup:</strong> encrypted with AES-256 on your device before upload. The encryption key is stored in the Android Keystore and never transmitted.</li>
+            <li><strong>Network traffic:</strong> all communication with Firebase and Google APIs uses TLS 1.2 or higher.</li>
+            <li><strong>Access control:</strong> access to the app is restricted to an authorised email whitelist maintained in Firestore by the account owner.</li>
+        </ul>
+
+        <h2>6. Data Retention and Deletion</h2>
+        <h3>Local data</h3>
+        <p>Your project data exists only on your device. You can delete it at any time by deleting individual records within the app or uninstalling the app (which automatically deletes all local data).</p>
+        
+        <h3>Drive backup</h3>
+        <p>To delete your Drive backup, go to Google Drive > Settings > Manage Apps, find Project Guard, and tap “Delete hidden app data”.</p>
+        
+        <h3>Firestore entry</h3>
+        <p>Your email address in the Firestore whitelist is maintained by the account administrator. To request removal, contact your administrator or email projectguard101@gmail.com.</p>
+        <p>Crashlytics data is automatically deleted after 90 days per Google's policy.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>Because your financial data never reaches the developer's servers, you are already in full control of it. For data held by Google services (email in Firestore, crash reports):</p>
+        <ul>
+            <li><strong>Right of access:</strong> email projectguard101@gmail.com to request a list of data held about you.</li>
+            <li><strong>Right to deletion:</strong> request deletion of your Firestore entry at any time.</li>
+            <li><strong>Right to correction:</strong> if your email address on the whitelist is incorrect, contact your administrator.</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Project Guard is a professional tool for adult business users and does not knowingly collect personal information from anyone under the age of 13.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>Material changes will be posted at the same URL with an updated effective date. Continued use constitutes acceptance. For significant changes, we will notify you through an in-app message.</p>
+
+        <h2>10. Contact Us</h2>
+        <div class="contact-card">
+            <strong>Project Guard Support</strong><br>
+            Email: projectguard101@gmail.com<br><br>
+            We aim to respond to all privacy enquiries within 5 business days.
+        </div>
+
+        <div class="footer">
+            Last updated: May 2026 | Project Guard Construction Financial Integrity App
+        </div>
+    </div>
+</body>
+</html>

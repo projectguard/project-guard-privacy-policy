@@ -1,257 +1,337 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <style>
-        @page {
-            size: A4;
-            margin: 20mm;
-            background-color: #ffffff;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            line-height: 1.6;
-            font-size: 11pt;
-            margin: 0;
-            padding: 0;
-        }
-        .header-banner {
-            background-color: #1a365d;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 22pt;
-            letter-spacing: 1px;
-        }
-        .subtitle {
-            font-size: 12pt;
-            opacity: 0.9;
-            margin-top: 5px;
-        }
-        .meta-info {
-            font-size: 10pt;
-            margin-top: 15px;
-            font-style: italic;
-        }
-        .container {
-            padding: 0 10px;
-        }
-        .highlight-box {
-            background-color: #f0f4f8;
-            border-left: 5px solid #1a365d;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        .highlight-box h2 {
-            margin-top: 0;
-            color: #1a365d;
-            font-size: 14pt;
-        }
-        h2 {
-            color: #1a365d;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 8px;
-            margin-top: 25px;
-            font-size: 15pt;
-        }
-        h3 {
-            color: #2c5282;
-            font-size: 12pt;
-            margin-top: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 10pt;
-        }
-        th {
-            background-color: #edf2f7;
-            text-align: left;
-            padding: 12px;
-            border: 1px solid #cbd5e0;
-            color: #2d3748;
-        }
-        td {
-            padding: 12px;
-            border: 1px solid #cbd5e0;
-            vertical-align: top;
-        }
-        .contact-card {
-            background-color: #f7fafc;
-            border: 1px solid #e2e8f0;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 4px;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 9pt;
-            color: #718096;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 20px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProjectGuard — Privacy Policy</title>
+<style>
+  :root {
+    --ink: #0F1B33;
+    --muted: #6B7589;
+    --rule: #E5DFCF;
+    --bone: #F7F4EE;
+    --orange: #F26B1F;
+    --good: #1F7A4A;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bone); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 22px 64px; }
+  header { padding-bottom: 18px; border-bottom: 1px solid var(--rule); margin-bottom: 26px; }
+  header .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.18em; font-size: 11px;
+    font-weight: 700; color: var(--orange); margin: 0 0 6px;
+  }
+  header h1 { margin: 0; font-size: 30px; letter-spacing: -0.5px; }
+  header p.lede { margin: 10px 0 0; color: var(--muted); font-size: 15px; }
+  h2 {
+    margin: 38px 0 8px; font-size: 19px; letter-spacing: -0.2px;
+    border-left: 3px solid var(--orange); padding-left: 10px;
+  }
+  h3 { margin: 22px 0 6px; font-size: 15px; color: var(--ink); }
+  p, li { font-size: 15px; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  code, .mono {
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px; background: rgba(15,27,51,0.06);
+    padding: 1px 6px; border-radius: 4px;
+  }
+  .callout {
+    background: #FFF1E5; border: 1px solid rgba(242,107,31,0.25);
+    border-radius: 10px; padding: 14px 16px; margin: 16px 0;
+  }
+  .callout.privacy { background: rgba(31,122,74,0.08); border-color: rgba(31,122,74,0.3); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px;
+    font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule);
+    vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); text-transform: uppercase;
+    font-size: 11px; letter-spacing: 0.12em; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 13px; }
+  a { color: var(--orange); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .tldr { margin: 0 0 12px; font-weight: 600; }
+</style>
 </head>
 <body>
-    <div class="header-banner">
-        <h1>Privacy Policy</h1>
-        <div class="subtitle">Project Guard — Construction Financial Integrity App</div>
-        <div class="meta-info">Effective Date: May 2026</div>
-    </div>
+<main>
 
-    <div class="container">
-        <div class="highlight-box">
-            <h2>YOUR DATA STAYS WITH YOU</h2>
-            <p>Project Guard does not operate any developer server that holds your financial data. Everything you enter lives on your phone or in your own private Google Drive folder.</p>
-            <p><strong>"Not even the developer can access your project finances, transactions, or documents."</strong></p>
-        </div>
+<header>
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>ProjectGuard</h1>
+  <p class="lede">An offline-first financial-integrity app for Ghanaian
+  construction contractors. This page explains what data the app handles, where
+  it goes, and what choices you have.</p>
+  <p class="lede"><strong>Effective date:</strong> 29 May 2026 &nbsp;·&nbsp;
+  <strong>Version:</strong> 2.0</p>
+</header>
 
-        <h2>1. About This Policy</h2>
-        <p>This policy explains what information Project Guard collects, how it is used, and the choices you have. We use plain English intentionally — there is no fine print.</p>
+<div class="callout privacy">
+  <p class="tldr">The short version</p>
+  <p>Your financial records live on <strong>your phone</strong>. Almost nothing
+  leaves it. The exceptions are clearly named below: sign-in, optional cloud
+  backup to your own Google Drive, and — only if you choose to switch it on —
+  the Charley AI assistant, which can read selected slices of your data to
+  answer questions.</p>
+</div>
 
-        <h2>2. What Data We Collect</h2>
-        
-        <h3>Data that never leaves your device</h3>
-        <p>The following data is stored only in a local database on your phone inside the Android private app sandbox. It is never transmitted to any server operated by the developer:</p>
-        <ul>
-            <li>Project details, budgets, and financial transactions</li>
-            <li>Business and Personal Treasury account balances, income, and expense records</li>
-            <li>Loan records and payment schedules</li>
-            <li>Currency conversion history</li>
-            <li>Supplier and payee records</li>
-            <li>Receipt photos captured by the camera</li>
-            <li>Site contact names and numbers selected from your address book</li>
-            <li>SMS messages read from mobile money and bank alert senders</li>
-        </ul>
+<h2>1. Who we are</h2>
+<p>ProjectGuard is published by the ProjectGuard team. You can reach us at
+<a href="mailto:projectguard101@gmail.com">projectguard101@gmail.com</a>
+or on WhatsApp at <a href="https://wa.me/233249737694">+233 24 973 7694</a>.</p>
 
-        <h3>Data stored in your own Google Drive</h3>
-        <p>If you enable the optional backup feature, an encrypted backup of your local database is uploaded to the AppData folder of your own Google Drive account.</p>
-        <ul>
-            <li>This folder is private to you — it is not visible in your Google Drive file browser and cannot be accessed by anyone else, including the developer.</li>
-            <li>The backup is encrypted with AES-256 before it leaves your device.</li>
-        </ul>
+<h2>2. What data is collected, and where it lives</h2>
 
-        <h3>Data sent to third-party services</h3>
-        <p>A small amount of data is shared with the following Google services strictly for app operation:</p>
-        <ul>
-            <li><strong>Firebase Authentication / Google Sign-In:</strong> your Google account email and name, used solely to verify your identity and check access authorisation.</li>
-            <li><strong>Cloud Firestore:</strong> your email address is checked against an authorised-users list. No financial data is stored in Firestore.</li>
-            <li><strong>Firebase Crashlytics:</strong> anonymous stack traces when the app crashes. These contain no financial data, no identifiers, and no SMS content.</li>
-        </ul>
+<h3>2.1 On your phone (does not leave the device by default)</h3>
+<ul>
+  <li>Financial entries you create: transactions, projects, BOQ items, phase
+    budgets, invoices, loans, exchange rates.</li>
+  <li>Receipt photos you take through the in-app scanner, stored in the app's
+    private documents directory.</li>
+  <li>SMS alerts ingested by the app: the sender, the message body, the parsed
+    amount, direction (credit/debit), and the detected account/wallet
+    (MTN MoMo, AT Money, Telecel Cash, bank).</li>
+  <li>Notebook entries, checklists and project memos.</li>
+  <li>App preferences (theme, app-lock state, onboarding state, Charley consent
+    flag).</li>
+  <li>Charley conversation history (if you've turned Charley on).</li>
+</ul>
 
-        <h2>3. Android Permissions Explained</h2>
-        <p>The table below lists every Android permission the app requests and the exact reason for each one.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Permission</th>
-                    <th>Why it is needed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>READ_SMS / RECEIVE_SMS</td>
-                    <td>Parse mobile money & bank alerts on-device only. Never uploaded.</td>
-                </tr>
-                <tr>
-                    <td>CAMERA</td>
-                    <td>Scan receipts. Photos stored locally — never transmitted.</td>
-                </tr>
-                <tr>
-                    <td>READ_CONTACTS</td>
-                    <td>Pick site contacts. Contact data stays on your phone.</td>
-                </tr>
-                <tr>
-                    <td>READ/WRITE_EXTERNAL_STORAGE</td>
-                    <td>Export reports on Android 9 and below only.</td>
-                </tr>
-                <tr>
-                    <td>INTERNET</td>
-                    <td>Firebase login, whitelist check, and anonymous crash reports.</td>
-                </tr>
-                <tr>
-                    <td>RECEIVE_BOOT_COMPLETED</td>
-                    <td>Restart SMS listener after device reboot.</td>
-                </tr>
-                <tr>
-                    <td>POST_NOTIFICATIONS</td>
-                    <td>Show local payment reminder alerts on your device.</td>
-                </tr>
-                <tr>
-                    <td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td>
-                    <td>Keep SMS listener alive in the background.</td>
-                </tr>
-            </tbody>
-        </table>
+<h3>2.2 Sign-in &amp; access (Google + Firebase)</h3>
+<p>When you sign in with Google, the app receives your <strong>email</strong>
+and <strong>display name</strong>. We use Firebase services (Google LLC) for:</p>
+<ul>
+  <li><strong>Firebase Authentication</strong> — to identify your account and
+    bind it to this device.</li>
+  <li><strong>Firestore</strong> — to store a small access record:
+    your email, your role (admin / contractor / accountant / site manager /
+    personal assistant), the device that claimed your account, the time you
+    last signed in, and (for QR-invited team members) the invite that linked
+    you. No financial figures are written to Firestore.</li>
+  <li><strong>Firebase Remote Config</strong> — to deliver runtime settings
+    (e.g. the AI provider keys and feature flags) without an app update.</li>
+  <li><strong>Firebase Crashlytics</strong> — if a crash occurs, an anonymised
+    crash report (stack trace, device model, OS version) is sent so we can
+    fix it. Your financial data is never included in a crash report.</li>
+</ul>
 
-        <h2>4. Third-Party Services</h2>
-        <p>Project Guard uses the following Google LLC services. Each service is governed by Google’s Privacy Policy (policies.google.com/privacy):</p>
-        <ul>
-            <li>Firebase Authentication — secure login and identity verification</li>
-            <li>Cloud Firestore — stores only your email address for access control</li>
-            <li>Firebase Crashlytics — anonymous crash diagnostics, no personal data</li>
-            <li>Google Drive API — your encrypted backup, stored in your own account</li>
-        </ul>
-        <p>No advertising SDKs, analytics SDKs, or data brokers are used. The developer does not sell, rent, or share your data with any third party beyond the Google services listed above.</p>
-        <p>Users may choose to share generated financial reports or grant read-only access to their personal accountants entirely at their own discretion. Any such sharing is initiated by the user and is outside the control of Project Guard.</p>
+<h3>2.3 Backups (your Google Drive, optional)</h3>
+<p>If you turn on backup, the app writes an encrypted snapshot of your local
+database into the <strong>AppData folder</strong> of your own Google Drive.
+The AppData folder is a hidden area only this app can read; even you cannot
+see it through the normal Drive UI. Nothing is sent to our servers; your data
+stays inside your Google account.</p>
 
-        <h2>5. Data Security</h2>
-        <ul>
-            <li><strong>Local database:</strong> protected by Android File-Based Encryption (FBE), which locks the app's private storage with your device PIN or biometric.</li>
-            <li><strong>Drive backup:</strong> encrypted with AES-256 on your device before upload. The encryption key is stored in the Android Keystore and never transmitted.</li>
-            <li><strong>Network traffic:</strong> all communication with Firebase and Google APIs uses TLS 1.2 or higher.</li>
-            <li><strong>Access control:</strong> access to the app is restricted to an authorised email whitelist maintained in Firestore by the account owner.</li>
-        </ul>
+<h2>3. The Charley AI assistant (opt-in)</h2>
 
-        <h2>6. Data Retention and Deletion</h2>
-        <h3>Local data</h3>
-        <p>Your project data exists only on your device. You can delete it at any time by deleting individual records within the app or uninstalling the app (which automatically deletes all local data).</p>
-        
-        <h3>Drive backup</h3>
-        <p>To delete your Drive backup, go to Google Drive > Settings > Manage Apps, find Project Guard, and tap “Delete hidden app data”.</p>
-        
-        <h3>Firestore entry</h3>
-        <p>Your email address in the Firestore whitelist is maintained by the account administrator. To request removal, contact your administrator or email projectguard101@gmail.com.</p>
-        <p>Crashlytics data is automatically deleted after 90 days per Google's policy.</p>
+<p>Charley is the in-app AI helper. It is <strong>off by default</strong>. To
+use it you must explicitly turn it on; you can turn it off again any time from
+<em>More → Settings → Charley AI assistant</em> or from the menu inside the
+chat. With Charley off, no question and no figures leave your phone for AI
+processing.</p>
 
-        <h2>7. Your Rights</h2>
-        <p>Because your financial data never reaches the developer's servers, you are already in full control of it. For data held by Google services (email in Firestore, crash reports):</p>
-        <ul>
-            <li><strong>Right of access:</strong> email projectguard101@gmail.com to request a list of data held about you.</li>
-            <li><strong>Right to deletion:</strong> request deletion of your Firestore entry at any time.</li>
-            <li><strong>Right to correction:</strong> if your email address on the whitelist is incorrect, contact your administrator.</li>
-        </ul>
+<h3>3.1 What gets sent when Charley is on</h3>
+<p>When you ask Charley a question (in the floating mini-chat or the full
+chat), the app sends, over HTTPS, to one of the AI providers below:</p>
+<ul>
+  <li>The text of your question.</li>
+  <li><strong>Only</strong> the slice of figures Charley needs to answer it —
+    for example a treasury snapshot when you ask about cash, a project's
+    totals when you ask about a project, or a week summary when you ask about
+    spending. Charley does <strong>not</strong> upload your whole database.</li>
+  <li>If you ask Charley to take an action (record an expense, draft a letter,
+    create a project), the parameters of that action — the app then performs
+    the write locally on your phone after you confirm.</li>
+</ul>
 
-        <h2>8. Children's Privacy</h2>
-        <p>Project Guard is a professional tool for adult business users and does not knowingly collect personal information from anyone under the age of 13.</p>
+<h3>3.2 AI providers used</h3>
+<table>
+  <thead><tr><th>Provider</th><th>Model</th><th>Role</th><th>Training note</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Groq, Inc.</td>
+      <td><span class="mono">llama-3.3-70b-versatile</span></td>
+      <td>Primary</td>
+      <td>Does not train on customer inputs per the provider's stated terms.</td>
+    </tr>
+    <tr>
+      <td>Cerebras Systems, Inc.</td>
+      <td><span class="mono">llama-3.3-70b</span></td>
+      <td>Fallback (load-balancing)</td>
+      <td>Does not train on customer inputs per the provider's stated terms.</td>
+    </tr>
+    <tr>
+      <td>Google LLC (Gemini)</td>
+      <td><span class="mono">gemini-2.5-flash</span></td>
+      <td>Fallback (last resort, vision)</td>
+      <td>Google may use the content you send to improve its services, per
+        the Gemini terms.</td>
+    </tr>
+  </tbody>
+</table>
+<p>Requests fall through to the next provider only when the previous one is
+unavailable or rate-limited. We do not pick which provider handles a given
+question — the failover order is deterministic.</p>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>Material changes will be posted at the same URL with an updated effective date. Continued use constitutes acceptance. For significant changes, we will notify you through an in-app message.</p>
+<h3>3.3 Smart SMS classification (opt-in &amp; online only)</h3>
+<p>The app's regex-based SMS parser runs entirely on your phone and identifies
+almost all real bank / mobile-money alerts without any network call. When
+Charley is on and you open a single message on the SMS Review screen, the app
+additionally sends the message's <strong>sender and body</strong> to one of the
+AI providers above so Charley can read the message in context — for example,
+to recognise that a 1-cedi credit is a loyalty rebate, not a regular transfer.
+This per-message context pass is the only time the SMS body is sent to a cloud
+service; with Charley off, the parser works fully on-device.</p>
 
-        <h2>10. Contact Us</h2>
-        <div class="contact-card">
-            <strong>Project Guard Support</strong><br>
-            Email: projectguard101@gmail.com<br><br>
-            We aim to respond to all privacy enquiries within 5 business days.
-        </div>
+<h3>3.4 Hybrid receipt OCR (opt-in &amp; online only)</h3>
+<p>Receipt photos are read by Google ML Kit <strong>on your phone</strong> by
+default. If Charley is on, you are online, and the on-device read is
+inconclusive (blurred image, unusual layout), the app silently sends a
+<strong>downscaled copy of the receipt image</strong> to Google Gemini to
+extract the total and vendor. The original photo always stays on your phone.</p>
 
-        <div class="footer">
-            Last updated: May 2026 | Project Guard Construction Financial Integrity App
-        </div>
-    </div>
+<h3>3.5 Bring your own AI key</h3>
+<p>The "Use your own AI key" feature, when enabled by the developer through
+Remote Config, lets you paste a free Groq, Gemini or Cerebras key of your own
+into the app settings. When a key is set, it is stored <strong>only on your
+phone</strong> and used instead of the app's shared key — so your Charley
+requests run on your personal quota, not the shared one. You can clear the key
+any time to return to the shared service.</p>
+
+<h2>4. Permissions the app asks for</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>SMS — Read</td>
+        <td>To automatically ingest mobile-money and bank alerts so you don't
+            re-type them. Messages are scanned for the amount, direction, fee
+            and account, then placed in your SMS Inbox for you to confirm.</td></tr>
+    <tr><td>Camera</td>
+        <td>To photograph receipts for the in-app scanner.</td></tr>
+    <tr><td>Storage / Photos</td>
+        <td>To save receipt images and, with your action, to export PDFs of
+            invoices and letters.</td></tr>
+    <tr><td>Notifications</td>
+        <td>For budget alerts, payment reminders, project-loan due dates and
+            other in-app reminders.</td></tr>
+    <tr><td>Biometric</td>
+        <td>Optional — to unlock the app with your fingerprint or face after
+            you set an app PIN.</td></tr>
+    <tr><td>Internet</td>
+        <td>For Google sign-in, Firebase, Charley (if on), the OCR cloud
+            fallback (if on), and your Drive backup (if on). Everything else
+            works offline.</td></tr>
+    <tr><td>Battery optimisation</td>
+        <td>Asked once so SMS ingestion keeps working in the background. You
+            can decline.</td></tr>
+  </tbody>
+</table>
+
+<h2>5. Data retention &amp; deletion</h2>
+<ul>
+  <li><strong>On-device data</strong> stays until you uninstall the app or
+    clear its storage in Android settings.</li>
+  <li><strong>Drive backups</strong> live in your own Drive AppData folder.
+    You can revoke this app's Drive access from your Google account at any
+    time, which orphans the backup file; you can also delete it through Drive
+    Apps &amp; Web management.</li>
+  <li><strong>Firestore access record</strong> persists while your account is
+    active. If your account is revoked from the whitelist, the record's status
+    is set to revoked. You can request full deletion by emailing us.</li>
+  <li><strong>Crash reports</strong> follow Google's Crashlytics retention
+    (typically 90 days).</li>
+  <li><strong>Charley conversation logs</strong> live on your phone only — the
+    AI providers do not retain them on our behalf. Delete a conversation from
+    the chat's history menu and it's gone.</li>
+</ul>
+
+<h2>6. Security</h2>
+<ul>
+  <li>All network traffic uses HTTPS / TLS.</li>
+  <li>The local database is stored inside the app's private sandbox, which
+    other apps on the device cannot read.</li>
+  <li>Optional <strong>app lock</strong> with a 4-digit PIN and optional
+    biometric unlock — the app re-locks whenever it returns from the
+    background.</li>
+  <li>Sign-in is tied to a device fingerprint so a stolen credential alone
+    can't open your account on another phone.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>ProjectGuard is intended for use by adult construction contractors and
+their team members. It is not directed to children under 13, and we do not
+knowingly collect data from them.</p>
+
+<h2>8. Your rights and choices</h2>
+<ul>
+  <li><strong>Turn Charley off</strong> any time — More → Settings → Charley.
+    With Charley off, nothing financial leaves your phone for AI processing.</li>
+  <li><strong>Revoke Android permissions</strong> (SMS, camera, storage,
+    notifications) from Android Settings → Apps → ProjectGuard → Permissions.
+    The corresponding features stop working but the rest of the app continues.</li>
+  <li><strong>Revoke Drive backup</strong> via your Google account's "Apps
+    with access" page.</li>
+  <li><strong>Export or delete your data</strong> — email us at
+    <a href="mailto:projectguard101@gmail.com">projectguard101@gmail.com</a>
+    and we'll help. On-device data you can also clear directly by uninstalling
+    the app or clearing its storage.</li>
+  <li><strong>Bring your own AI key</strong> — when this feature is enabled,
+    you can move your Charley usage entirely onto your own quota by pasting
+    a personal key in More → Settings → Your own AI key.</li>
+</ul>
+
+<h2>9. Third-party processors at a glance</h2>
+<table>
+  <thead><tr><th>Service</th><th>Used for</th><th>Where</th></tr></thead>
+  <tbody>
+    <tr><td>Google (Firebase Auth, Firestore, Remote Config, Crashlytics)</td>
+        <td>Sign-in, access records, runtime config, crash reports</td>
+        <td>Google Cloud</td></tr>
+    <tr><td>Google Drive (AppData folder)</td>
+        <td>Encrypted backup of your local database — your own Drive</td>
+        <td>Google Drive</td></tr>
+    <tr><td>Google ML Kit (on-device)</td>
+        <td>Receipt OCR on the phone</td>
+        <td>On your device</td></tr>
+    <tr><td>Google Gemini (cloud)</td>
+        <td>Charley fallback, receipt OCR escalation, smart SMS classification
+            (all opt-in)</td>
+        <td>Google Cloud</td></tr>
+    <tr><td>Groq, Inc.</td>
+        <td>Charley primary provider (opt-in)</td>
+        <td>Groq Cloud</td></tr>
+    <tr><td>Cerebras Systems, Inc.</td>
+        <td>Charley failover provider (opt-in)</td>
+        <td>Cerebras Cloud</td></tr>
+    <tr><td>WhatsApp / email apps on your phone</td>
+        <td>Opened pre-filled when you tap a feedback / renewal link</td>
+        <td>Your device — nothing auto-sent</td></tr>
+  </tbody>
+</table>
+
+<h2>10. Changes to this policy</h2>
+<p>If we change anything material — a new AI provider, a new permission, a
+change in what's sent for what feature — we will update the effective date at
+the top of this page and, where the change is significant, surface a notice in
+the app the next time you open it. Continued use after a change means you
+accept the updated policy.</p>
+
+<h2>11. Contact</h2>
+<p>Privacy questions, deletion requests, or anything else:</p>
+<ul>
+  <li>Email: <a href="mailto:projectguard101@gmail.com">projectguard101@gmail.com</a></li>
+  <li>WhatsApp: <a href="https://wa.me/233249737694">+233 24 973 7694</a></li>
+</ul>
+
+<footer>
+  <p>ProjectGuard · Privacy Policy v2.0 · Last updated 29 May 2026.</p>
+</footer>
+
+</main>
 </body>
 </html>

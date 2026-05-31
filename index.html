@@ -67,8 +67,8 @@
   <p class="lede">An offline-first financial-integrity app for Ghanaian
   construction contractors. This page explains what data the app handles, where
   it goes, and what choices you have.</p>
-  <p class="lede"><strong>Effective date:</strong> 29 May 2026 &nbsp;·&nbsp;
-  <strong>Version:</strong> 2.0</p>
+  <p class="lede"><strong>Effective date:</strong> 31 May 2026 &nbsp;·&nbsp;
+  <strong>Version:</strong> 2.1</p>
 </header>
 
 <div class="callout privacy">
@@ -93,9 +93,11 @@ or on WhatsApp at <a href="https://wa.me/233249737694">+233 24 973 7694</a>.</p>
     budgets, invoices, loans, exchange rates.</li>
   <li>Receipt photos you take through the in-app scanner, stored in the app's
     private documents directory.</li>
-  <li>SMS alerts ingested by the app: the sender, the message body, the parsed
-    amount, direction (credit/debit), and the detected account/wallet
-    (MTN MoMo, AT Money, Telecel Cash, bank).</li>
+  <li>SMS alerts you choose to bring into the app — by sharing them from your
+    Messages app or pasting them. The app does <strong>not</strong> read your
+    SMS inbox and holds no SMS permission. For a message you import, it stores
+    the message body, the parsed amount, direction (credit/debit), and the
+    detected account/wallet (MTN MoMo, AT Money, Telecel Cash, bank).</li>
   <li>Notebook entries, checklists and project memos.</li>
   <li>App preferences (theme, app-lock state, onboarding state, Charley consent
     flag).</li>
@@ -161,7 +163,7 @@ chat), the app sends, over HTTPS, to one of the AI providers below:</p>
     </tr>
     <tr>
       <td>Cerebras Systems, Inc.</td>
-      <td><span class="mono">llama-3.3-70b</span></td>
+      <td><span class="mono">gpt-oss-120b</span></td>
       <td>Fallback (load-balancing)</td>
       <td>Does not train on customer inputs per the provider's stated terms.</td>
     </tr>
@@ -180,8 +182,10 @@ question — the failover order is deterministic.</p>
 
 <h3>3.3 Smart SMS classification (opt-in &amp; online only)</h3>
 <p>The app's regex-based SMS parser runs entirely on your phone and identifies
-almost all real bank / mobile-money alerts without any network call. When
-Charley is on and you open a single message on the SMS Review screen, the app
+almost all real bank / mobile-money alerts without any network call. It only
+ever processes messages you bring in yourself — shared or pasted — never your
+SMS inbox. When Charley is on and you open one of those messages on the SMS
+Review screen, the app
 additionally sends the message's <strong>sender and body</strong> to one of the
 AI providers above so Charley can read the message in context — for example,
 to recognise that a 1-cedi credit is a loyalty rebate, not a regular transfer.
@@ -207,10 +211,6 @@ any time to return to the shared service.</p>
 <table>
   <thead><tr><th>Permission</th><th>Why</th></tr></thead>
   <tbody>
-    <tr><td>SMS — Read</td>
-        <td>To automatically ingest mobile-money and bank alerts so you don't
-            re-type them. Messages are scanned for the amount, direction, fee
-            and account, then placed in your SMS Inbox for you to confirm.</td></tr>
     <tr><td>Camera</td>
         <td>To photograph receipts for the in-app scanner.</td></tr>
     <tr><td>Storage / Photos</td>
@@ -227,8 +227,8 @@ any time to return to the shared service.</p>
             fallback (if on), and your Drive backup (if on). Everything else
             works offline.</td></tr>
     <tr><td>Battery optimisation</td>
-        <td>Asked once so SMS ingestion keeps working in the background. You
-            can decline.</td></tr>
+        <td>Asked once so scheduled reminders and your nightly Drive backup
+            run reliably in the background. You can decline.</td></tr>
   </tbody>
 </table>
 
@@ -271,7 +271,7 @@ knowingly collect data from them.</p>
 <ul>
   <li><strong>Turn Charley off</strong> any time — More → Settings → Charley.
     With Charley off, nothing financial leaves your phone for AI processing.</li>
-  <li><strong>Revoke Android permissions</strong> (SMS, camera, storage,
+  <li><strong>Revoke Android permissions</strong> (camera, storage,
     notifications) from Android Settings → Apps → ProjectGuard → Permissions.
     The corresponding features stop working but the rest of the app continues.</li>
   <li><strong>Revoke Drive backup</strong> via your Google account's "Apps
@@ -329,7 +329,7 @@ accept the updated policy.</p>
 </ul>
 
 <footer>
-  <p>ProjectGuard · Privacy Policy v2.0 · Last updated 29 May 2026.</p>
+  <p>ProjectGuard · Privacy Policy v2.1 · Last updated 31 May 2026.</p>
 </footer>
 
 </main>
